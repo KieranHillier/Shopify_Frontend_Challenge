@@ -1,0 +1,155 @@
+body {
+  background-color: #000639;
+}
+#main {
+  position: absolute;
+  font-family: helvetica;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows; 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#main h2 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+#main p {
+  color: white;
+  font-weight: 100;
+}
+
+#title {
+  color: #FFFFFF;
+  font-size: 24px;
+  text-align:left;
+}
+#sub-title {
+  font-size: 16px;
+  color: white;
+  float: left;
+  margin: 30px 0 ;
+  font-weight: 100;
+}
+#green-line {
+  background: #7AB55C;
+  width: 23px;
+  height: 2px;
+}
+#button-container {
+  display: grid;
+/*   grid-template-columns: 1.6fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 14px;
+}
+
+#email::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7B7B7B;
+    opacity: 1; /* Firefox */
+}
+
+#email:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7B7B7B;
+}
+
+#email::-ms-input-placeholder { /* Microsoft Edge */
+    color: #7B7B7B;
+}
+/* .button {
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  background: #ffffff;
+  font-size: 16px;
+} */
+#warning-text {
+  color: #C23628;
+  font-size: 12px;
+  padding: 0 0 12px 0;
+  display: none;
+}
+#signUp-btn {
+  background: #5c6ac4;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.button {
+  display: block;
+  padding: .675rem .75rem;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: .35rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* #dropdown::after{
+
+  content: '\25BC';
+  border-left: 1px solid #333;
+  color: #333;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 10px;
+  text-align: center;
+
+  position: absolute;
+  right: 0px;
+  top: 15%;
+
+  height: 70%;
+  width: 50px;
+} */
+
+#dropdown {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+#dropdown-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#dropdown-container::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 13px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #7B7B7B transparent transparent transparent;
+}
+
+#button-devider {
+  position: absolute;
+  right: 43px;
+  top: 12px;
+  width: 1px;
+  height: 21px;
+  background: #7B7B7B;
+}
+
+#cars {
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
